@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Popup</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<style>
+		body {
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+	<body>
+		<h1>Password Save Manager</h1>
+
+		<div class="login-form">
+			<form id="login-form">
+				<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input
+						type="text"
+						placeholder="Enter Username"
+						name="email"
+						id="email"
+						autofocus
+					/>
+
+					<label for="psw"><b>Password</b></label>
+					<input
+						type="password"
+						placeholder="Enter Password"
+						name="psw"
+						id="psw"
+					/>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					<button type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+		<script src="scripts/popup.js"></script>
+	</body>
+</html>

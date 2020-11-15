@@ -1,0 +1,25 @@
+{
+	"name": "Password Save Manager Extension",
+	"description": "Password Save Manager",
+	"version": "0.1.0",
+	"manifest_version": 2,
+	"icons": {
+		"128": "./images/icon.png"
+	},
+
+	"background": {
+		"scripts": ["backgroundScript.js"],
+		"persistent": false
+	},
+	"browser_action": {
+		
+		"default_title": "Password save Manager"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["foregroundScript.js"]
+		}
+	],
+	"permissions": ["activeTab", "https://www.google.com/*", "storage"]
+}
