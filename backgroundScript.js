@@ -1,4 +1,4 @@
-let user_signed_in = true;
+let user_signed_in = false;
 
 const url = {
 	login: "http://localhost:5000/api/users/login",
