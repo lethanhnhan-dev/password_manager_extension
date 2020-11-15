@@ -20,8 +20,8 @@ chrome.browserAction.onClicked.addListener(function () {
 function flip_user_status(signIn, user_info) {
 	if (signIn) {
 		// Fetch the localhost:3000/login route
-		return fetch("http://localhost:3000/login", {
-			method: "GET",
+		return fetch(url.login, {
+			method: "POST",
 			headers: {
 				"Content-type": "application/json",
 			},
@@ -47,7 +47,7 @@ function flip_user_status(signIn, user_info) {
 		// 	headers: {
 		// 		"Content-type": "application/json",
 		// 	},
-			
+
 		// });
 	} else if (!signIn) {
 		// fetch the localhost:3000/logout route
